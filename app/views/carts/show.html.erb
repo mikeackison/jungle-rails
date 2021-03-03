@@ -1,8 +1,12 @@
+
+
 <section class="cart-show">
 
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
+
+<% if !enhanced_cart.empty? %>
 
   <div class="panel panel-default items">
     <table class="table table-bordered">
@@ -15,6 +19,8 @@
         </tr>
       </thead>
       <tbody>
+
+      
         <% enhanced_cart.each do |item| %>
           <%= render "item", product: item[:product], quantity: item[:quantity].to_i %>
         <% end %>
@@ -48,5 +54,11 @@
       <% end %>
     </div>
   </div>
+
+<% else %>
+<div class="alert alert-success">
+<%= link_to "YOUR CART IS EMPTY, CONTINUE SHOPPING", :products %>
+</div>
+<% end %>
 
 </section>
