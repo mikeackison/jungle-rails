@@ -1,11 +1,36 @@
-<h1>Signup!</h1>
+
+<section class="signup-new">
+
+  <header class="page-header">
+    <h1>Signup</h1>
+  </header>
 
 <%= form_for :user, url: "/users" do |f| %>
 
-  Name: <%= f.text_field :name %>
-  Email: <%= f.text_field :email %>
-  Password: <%= f.password_field :password %>
-  Password Confirmation: <%= f.password_field :password_confirmation %>
-  <%= f.submit "Submit" %>
+  <div class="grid-container">
+    Name: <%= f.text_field :name %>
+  </div>
+
+  <div class="grid-container">
+    Email: <%= f.text_field :email %>
+  </div>
+
+
+  <div class="grid-container">
+    Password: <%= f.password_field :password %>
+  </div>
+
+
+  <div class="grid-container">
+    Password Confirmation: <%= f.password_field :password_confirmation %>
+  </div>
+
+  <div class="grid-container">
+    <%= f.submit "Submit" %>
+  </div>
 
 <% end %>
+
+</section>
+
+

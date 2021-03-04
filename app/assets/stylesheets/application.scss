@@ -1,10 +1,10 @@
 // Vendor
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "font-awesome";
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'font-awesome';
 
 // App
-@import "products";
+@import 'products';
 
 // Global
 body {
@@ -14,4 +14,13 @@ body {
 // Bootstrap adjustments
 form.button_to {
   display: inline;
+}
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  width: 40em;
 }
