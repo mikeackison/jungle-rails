@@ -3,6 +3,13 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+  # added to see sale banner from everywhere
+  def active_sale
+    @active_sale = Sale.active.first
+  end
+
+  helper_method :active_sale
+
   # added step 14
   def current_user
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
