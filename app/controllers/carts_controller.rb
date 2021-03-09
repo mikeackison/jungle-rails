@@ -1,5 +1,8 @@
 class CartsController < ApplicationController
-  before_filter :authorize
+
+  # added this to force user login before adding anything to cart:
+
+  # before_filter :authorize
 
   def show
   end
