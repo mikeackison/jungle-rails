@@ -8,7 +8,11 @@
 <%= form_for :user, url: "/users" do |f| %>
 
   <div class="grid-container">
-    Name: <%= f.text_field :name %>
+    First Name: <%= f.text_field :first_name %>
+  </div>
+
+  <div class="grid-container">
+    Last Name: <%= f.text_field :last_name %>
   </div>
 
   <div class="grid-container">
