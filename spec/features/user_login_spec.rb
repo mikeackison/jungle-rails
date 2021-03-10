@@ -15,8 +15,6 @@ RSpec.feature "User can navigate to login page", type: :feature, js: true do
 
     click_button "Submit"
 
-    puts page.html
-
     # VERIFY
     # puts page.html
     expect(page).to have_text "Signed in as Danny"
