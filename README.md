@@ -26,9 +26,9 @@ A mini e-commerce application built with Rails 4.2, with an empasihis on learnin
 
 ## Screenshots
 
-!["Order"]()
-!["Admin"]()
-!["Products"]()
+!["Order"](https://github.com/mikeackison/jungle-rails/blob/master/public/screenshots/Order.png?raw=true)
+!["Admin"](https://github.com/mikeackison/jungle-rails/blob/master/public/screenshots/Admin.png?raw=true)
+!["Products"](https://github.com/mikeackison/jungle-rails/blob/master/public/screenshots/Products.png?raw=true)
 
 ## Setup
 
